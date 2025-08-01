@@ -3,9 +3,41 @@ import streamlit as st
 
 st.set_page_config(page_title="LumelaWeb Tier Picker", layout="centered")
 
-st.title("✨ LumelaWeb Tier Picker Quiz")
-st.subheader("Find your perfect Website Blueprint tier in 60 seconds.")
+# --- Custom CSS ---
+st.markdown(
+    """
+    <style>
+        div[data-baseweb="radio"] > div {
+            gap: 0.75rem;
+        }
+        [data-baseweb="radio"] .css-1hynsf2 {
+            background-color: #105489 !important;
+            border-color: #105489 !important;
+        }
+        .header-logo {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
+# --- Logo in top right ---
+st.markdown(
+    """
+    <div class="header-logo">
+        <a href="https://lumelaweb.com" target="_blank">
+            <img src="https://raw.githubusercontent.com/LumelaWeb/lumela-tier-picker/main/lumela-logo.png" width="120">
+        </a>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+st.title("LumelaWeb Blueprint Tier Picker Quiz")
+st.subheader("Find your perfect Website Blueprint tier in 60 seconds.")
 st.markdown("Answer a few quick questions and we’ll match you with the best package for where you are in business.")
 
 # --- Questions ---
@@ -104,6 +136,5 @@ if st.button("🔍 Show My Result"):
 
     # Action Buttons
     st.markdown("### 📎 Next Steps")
-    st.markdown("[📄 View Full Tier Comparison PDF](https://lumelaweb.com/wp-content/uploads/2024/07/LumelaWeb-Tier-Comparison-Blueprint.pdf)")
     st.markdown("[🌐 Explore All Tiers](https://lumelaweb.com/website-blueprint)")
     st.markdown("[📅 Book a Free Strategy Call](https://calendly.com/lumelaweb/30min)")
