@@ -10,12 +10,8 @@ st.markdown(
         div[data-baseweb="radio"] > div {
             gap: 0.75rem;
         }
-        input[type="radio"]:checked + div > div {
+        .st-av {
             background-color: #105489 !important;
-            border-color: #105489 !important;
-        }
-        [data-baseweb="radio"] label span {
-            font-size: 1rem;
         }
     </style>
     """,
