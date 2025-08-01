@@ -29,14 +29,14 @@ st.markdown(
     """
     <div class="header-logo">
         <a href="https://lumelaweb.com" target="_blank">
-            <img src="https://raw.githubusercontent.com/LumelaWeb/lumela-tier-picker/main/lumela-logo.png" width="120">
+            <img src="https://raw.githubusercontent.com/LumelaWeb/lumela-tier-picker/main/lumelaweb%20logo.jpg" width="120">
         </a>
     </div>
     """,
     unsafe_allow_html=True
 )
 
-st.title("LumelaWeb Blueprint Tier Picker Quiz")
+st.title("✨ LumelaWeb Tier Picker Quiz")
 st.subheader("Find your perfect Website Blueprint tier in 60 seconds.")
 st.markdown("Answer a few quick questions and we’ll match you with the best package for where you are in business.")
 
