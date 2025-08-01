@@ -10,28 +10,14 @@ st.markdown(
         div[data-baseweb="radio"] > div {
             gap: 0.75rem;
         }
-        [data-baseweb="radio"] .css-1hynsf2 {
+        input[type="radio"]:checked + div > div {
             background-color: #105489 !important;
             border-color: #105489 !important;
         }
-        .header-logo {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
+        [data-baseweb="radio"] label span {
+            font-size: 1rem;
         }
     </style>
-    """,
-    unsafe_allow_html=True
-)
-
-# --- Logo in top right ---
-st.markdown(
-    """
-    <div class="header-logo">
-        <a href="https://lumelaweb.com" target="_blank">
-            <img src="https://raw.githubusercontent.com/LumelaWeb/lumela-tier-picker/main/lumelaweb%20logo.jpg" width="120">
-        </a>
-    </div>
     """,
     unsafe_allow_html=True
 )
@@ -136,5 +122,5 @@ if st.button("🔍 Show My Result"):
 
     # Action Buttons
     st.markdown("### 📎 Next Steps")
-    st.markdown("[🌐 Explore All Tiers](https://lumelaweb.com/website-blueprint)")
+    st.markdown("[🌐 Explore All Tiers](https://lumelaweb.com/services/)")
     st.markdown("[📅 Book a Free Strategy Call](https://calendly.com/lumelaweb/30min)")
