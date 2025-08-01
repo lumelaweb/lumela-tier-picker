@@ -1,4 +1,4 @@
-app = "lumela tier picker"
+app = "lumel"
 
 [build]
   dockerfile = "Dockerfile"
